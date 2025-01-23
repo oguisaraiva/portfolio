@@ -11,5 +11,5 @@ function changeText() {
     }, 500); // Atraso de 0.5s antes de trocar o texto (durante a transição)
 }
 
-setInterval(changeText, 6000); // Troca o texto a cada 3 segundos
-changeText(); // Chama uma vez para iniciar
+setInterval(changeText, 6000);
+changeText();
