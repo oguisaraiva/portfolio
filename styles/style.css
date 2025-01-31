@@ -10,6 +10,7 @@
     --text-white: #ebebeb;
     --text-gray: #8f8f8f;
     --text-lightgray: #acacac;
+    --text-purple: #8872ee;
     --card-border: #1a1a1a;
     --spacing: 2rem;
     --transition: all 0.4s ease;
@@ -27,8 +28,33 @@ html {
 }
 
 body {
-    background-color: var(--primary-color);
     color: var(--text-white);
+    background-color: var(--primary-color);
+}
+
+.grain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -999;
+    transform: translateZ(0);
+    
+    &:before {
+      content: "";
+      top: -10rem;
+      left: -10rem;
+      width: calc(100% + 20rem);
+      height: calc(100% + 20rem);
+      z-index: -999;
+      position: fixed;
+      background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Image_gaussian_noise_example.png);
+      opacity: 0.065;
+      pointer-events: none;
+      -webkit-animation: noise 1s steps(2) infinite;
+      animation: noise 1s steps(2) infinite;
+    }
 }
 
 @keyframes blurAnimation {
@@ -87,7 +113,7 @@ body {
     width: 20vw;
     height: 40vh;
     border-radius: 50%;
-    background: rgba(98, 58, 124, 0.45);
+    background: rgba(78, 58, 124, 0.45);
     animation: blur2Animation 5s ease infinite;
     filter: blur(160px);
     z-index: -1;
@@ -176,11 +202,13 @@ header {
     letter-spacing: -0.09em;
     margin-bottom: 1rem;
     line-height: 1.2;
+    max-width: 600px;
 }
 
 .italic-today {
     font-family: 'Instrument Serif', serif;
     font-style: italic;
+    color: var(--text-purple);
     letter-spacing: -0.02em;
     font-weight: 400;
 }
@@ -261,8 +289,7 @@ section h2 {
 }
 
 .project-card:hover {
-    border-color: var(--border-color);
-    transform: translateY(-4px);
+    border: 1px solid var(--border-color);
 }
 
 .project-card::before {
@@ -376,13 +403,17 @@ section h2 {
 .stack-card {
     background: var(--accent-color);
     padding: 1.2rem;
-    gap: 0.4rem;
+    gap: 0.8rem;
     border-radius: 12px;
     border: 1px solid var(--card-border);
     transition: var(--transition);
     text-align: left;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+.stack-card-img{
+    width: 32px;
 }
 
 .stack-card:hover {
@@ -427,6 +458,10 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .container{
+        padding: 0 1rem;
+    }
+
     header {
         padding: 3.5rem 0 0 0;
     }
@@ -437,6 +472,7 @@ footer {
 
     .hero h1 {
         font-size: 2rem;
+        max-width: 300px;
     }
 
     .hero p {
@@ -450,15 +486,14 @@ footer {
     }
 
     .project-card {
-        padding: 0;
+        padding: 0.05rem;
         background-color: transparent !important;
         background-image: linear-gradient(
-            rgba(0, 0, 0, 0.85), /* Camada de cor com opacidade */
-            rgba(0, 0, 0, 0.95)
+            rgba(0, 0, 0, 0.88),
+            rgba(0, 0, 0, 0.9)
         ),
-        url(../assets/background.jpg);
+        url(../assets/purple-bg.jpg);
         background-position: center;
-        background-repeat: no-repeat;
     }
 
     .project-card-image {
