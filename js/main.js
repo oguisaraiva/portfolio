@@ -1,4 +1,4 @@
-const descriptions = ["Web developer", "UX/UI designer", "Content creator"];
+const descriptions = ["Web developer", "UX/UI enthusiast", "...writer sometimes"];
 const logoDescription = document.querySelector(".logo-description");
 let index = 0;
 
