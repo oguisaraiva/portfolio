@@ -463,11 +463,28 @@ footer {
     }
 
     header {
-        padding: 3.5rem 0 0 0;
+        padding: 2.5rem 0 0 0;
     }
 
-    .about-button, .projects-button, .cv-button{
+    .header-buttons{
+        flex-direction: row-reverse;
+        gap: 0.6rem;
+    }
+
+    .about-button, .projects-button{
         display: none;
+    }
+
+    .linkedin-button{
+        font-size: 0.85rem;
+    }
+
+    .cv-button{
+        width: 40px;
+        height: 30px;
+        border-radius: 8px;
+        border: 1px solid #2c2b30;
+        font-size: 0.85rem;
     }
 
     .hero h1 {
@@ -489,7 +506,7 @@ footer {
         padding: 0.05rem;
         background-color: transparent !important;
         background-image: linear-gradient(
-            rgba(0, 0, 0, 0.88),
+            rgba(0, 0, 0, 0.95),
             rgba(0, 0, 0, 0.9)
         ),
         url(../assets/purple-bg.jpg);
