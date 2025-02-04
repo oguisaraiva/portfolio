@@ -19,14 +19,31 @@
                     <div class="logo-description">UX/UI Designer</div>
                 </div>
             </div>
+
+            <!-- Menu para telas grandes -->
             <div class="header-buttons">
+                <img src="./assets/menu-icon.svg" alt="menu" class="hamburguer-menu">
                 <a class="about-button">/about</a>
                 <a class="projects-button">/projects</a>
                 <a href="./docs/guilherme-cv.pdf" download class="cv-button">/cv</a>
                 <a href="https://www.linkedin.com/in/oguisaraiva/" class="linkedin-button">/linkedin</a>
             </div>
         </div>
+
+        <!-- Menu hambúrguer para mobile -->
+        <nav class="mobile-menu">
+            <img src="./assets/close-menu-icon.svg" alt="menu" class="close-btn">
+            <a href="#about">about me</a>
+            <a href="#projects">projects</a>
+            <a href="https://www.linkedin.com/in/oguisaraiva/">linkedin</a>
+            <div class="download-button">
+                <a href="./docs/guilherme-cv.pdf" download>download cv</a>
+                <img src="./assets/download-icon.png" alt="download icon">
+            </div>
+        </nav>
     </header>
+
+    <div class="overlay"></div>
 
     <main class="container">
         <section class="hero">
@@ -57,7 +74,7 @@
                     <div class="project-card-text">
                         <img src="./assets/paste.png" alt="Background Logo" class="project-logo">
                         <h3>background</h3>
-                        <p>Breath-taking AI-generated backgrounds with AI prompts for your next design project.</p>
+                        <p>Breath-taking AI-generated backgrounds for your next project.</p>
                     </div>
                     <div class="project-card-image">
                         <img src="./assets/secpurple-bg.jpg" alt="Background">
@@ -132,24 +149,6 @@
                 </div>
                 <div class="stack-card">
                     <div>
-                        <img src="./assets/react_icon.png" class="stack-card-img">
-                    </div>
-                    <div style="display: flex; flex-direction: column; gap: 0.4rem;">
-                        <span class="stack-title">React.js</span>
-                        <span class="stack-description">Js framework</span>
-                    </div>
-                </div>
-                <div class="stack-card">
-                    <div>
-                        <img src="./assets/node_icon.png" class="stack-card-img">
-                    </div>
-                    <div style="display: flex; flex-direction: column; gap: 0.4rem;">
-                        <span class="stack-title">Node.js</span>
-                        <span class="stack-description">Js environment</span>
-                    </div>
-                </div>
-                <div class="stack-card">
-                    <div>
                         <img src="./assets/type_icon.png" class="stack-card-img">
                     </div>
                     <div style="display: flex; flex-direction: column; gap: 0.4rem;">
@@ -159,11 +158,29 @@
                 </div>
                 <div class="stack-card">
                     <div>
+                        <img src="./assets/react_icon.png" class="stack-card-img">
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 0.4rem;">
+                        <span class="stack-title">React.js</span>
+                        <span class="stack-description">Js framework</span>
+                    </div>
+                </div>
+                <div class="stack-card">
+                    <div>
                         <img src="./assets/vue_icon.png" class="stack-card-img">
                     </div>
                     <div style="display: flex; flex-direction: column; gap: 0.4rem;">
                         <span class="stack-title">Vue.js</span>
                         <span class="stack-description">Js framework</span> 
+                    </div>
+                </div>
+                <div class="stack-card">
+                    <div>
+                        <img src="./assets/node_icon.png" class="stack-card-img">
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 0.4rem;">
+                        <span class="stack-title">Node.js</span>
+                        <span class="stack-description">Js environment</span>
                     </div>
                 </div>
                 <div class="stack-card">
@@ -181,7 +198,7 @@
 
     <footer>
         <div class="container">
-            <p>Copyright © 2025. All rights reserved.</p>
+            <p>Copyright © 2025. guilherme.dev.</p>
         </div>
     </footer>
 
