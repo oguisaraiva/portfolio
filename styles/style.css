@@ -538,6 +538,12 @@ footer {
         padding: 0 1rem;
     }
 
+    .grain{
+        &:before{
+            opacity: 0;
+        }
+    }
+
     header {
         padding: 2.5rem 0 0 0;
     }
@@ -582,7 +588,8 @@ footer {
         background-color: transparent !important;
         background-image: linear-gradient(
             rgba(0, 0, 0, 1),
-            rgba(0, 0, 0, 0.9)
+            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.75)
         ),
         url(../assets/purple-bg.jpg);
         background-position: center;
