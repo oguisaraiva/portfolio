@@ -12,6 +12,7 @@
     --text-lightgray: #acacac;
     --text-purple: #8872ee;
     --text-violet: #d078ff;
+    --text-yellow: #fdff78;
     --card-border: #1a1a1a;
     --card-border-light: #1f1f1f;
     --card-border-lighter: #323232;
@@ -106,7 +107,7 @@ body.no-scroll{
     width: 20vw;
     height: 40vh;
     border-radius: 50%;
-    background: rgba(89, 68, 146, 0.45);
+    background: rgba(102, 64, 136, 0.4);
     animation: blurAnimation 5s ease infinite;
     filter: blur(180px);
     z-index: -1;
@@ -120,7 +121,7 @@ body.no-scroll{
     width: 20vw;
     height: 40vh;
     border-radius: 50%;
-    background: rgba(96, 68, 146, 0.45);
+    background: rgba(100, 80, 48, 0.36);
     animation: blur2Animation 5s ease infinite;
     filter: blur(160px);
     z-index: -1;
@@ -150,6 +151,8 @@ header {
 }
 
 .logo-img {
+    width: 50px;
+    height: 50px;
     margin-right: 0.75rem; /* Espaçamento entre a img e o logo-text */
 }
 
@@ -201,13 +204,12 @@ header {
 }
 
 .github-button:hover, .linkedin-button:hover{
-    color: var(--text-violet);
+    color: var(--text-yellow);
     transition: 0.3s ease;
 }
 
 .cv-button:hover{
-    border: 1px solid #8064a8;
-    color: var(--text-violet);
+    color: var(--text-yellow);
     transition: 0.3s ease;
 }
 
@@ -223,8 +225,8 @@ header {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.86);
-    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(6px);
     color: var(--text-white);
     display: flex;
     flex-direction: column;
@@ -265,7 +267,7 @@ header {
 }
 
 .mobile-menu a:hover{
-    color: var(--text-violet);
+    color: var(--text-yellow);
     transition: 0.2s ease;
 }
 
@@ -301,7 +303,7 @@ header {
 .italic-today {
     font-family: 'Instrument Serif', serif;
     font-style: italic;
-    color: var(--text-violet);
+    color: var(--text-yellow);
     letter-spacing: -0.02em;
     font-weight: 400;
 }
@@ -599,7 +601,7 @@ footer {
         background-image: linear-gradient(
             rgba(0, 0, 0, 1),
             rgba(0, 0, 0, 0.9),
-            rgba(0, 0, 0, 0.75)
+            rgba(0, 0, 0, 0.85)
         ),
         url(../assets/purple-bg.jpg);
         background-position: center;
