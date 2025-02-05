@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     menu.addEventListener("click", (e) => {
         if (e.target === menu) {
             menu.classList.remove("active");
+            document.body.classList.remove("no-scroll");
         }
     });
 });
