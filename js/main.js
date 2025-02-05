@@ -1,4 +1,4 @@
-const descriptions = ["Web developer", "UX/UI enthusiast", "...writer sometimes"];
+const descriptions = ["Web developer", "UX/UI focused", "Tech enthusiast"];
 const logoDescription = document.querySelector(".logo-description");
 let index = 0;
 
@@ -17,19 +17,26 @@ changeText();
 
 /* Dinamicidade do menu hambúrguer na versão mobile */
 document.addEventListener("DOMContentLoaded", function () {
-  const menuToggle = document.querySelector(".hamburguer-menu");
-  const menu = document.querySelector(".mobile-menu");
-  const closeBtn = document.querySelector(".close-btn");
+    const menuToggle = document.querySelector(".hamburguer-menu");
+    const menu = document.querySelector(".mobile-menu");
+    const closeBtn = document.querySelector(".close-btn");
 
-  /* Abertura do menu */
-  menuToggle.addEventListener("click", () => {
-      menu.classList.add("active");
-      document.body.classList.add("no-scroll");
-  });
+    /* Abertura do menu */
+    menuToggle.addEventListener("click", () => {
+        menu.classList.add("active");
+        document.body.classList.add("no-scroll");
+    });
 
-  /* Fechamento do menu */
-  closeBtn.addEventListener("click", () => {
-      menu.classList.remove("active");
-      document.body.classList.remove("no-scroll");
-  });
+    /* Fechamento do menu */
+    closeBtn.addEventListener("click", () => {
+        menu.classList.remove("active");
+        document.body.classList.remove("no-scroll");
+    });
+  
+    /* Fechamento do menu ao clicar fora */
+    menu.addEventListener("click", (e) => {
+        if (e.target === menu) {
+            menu.classList.remove("active");
+        }
+    });
 });
