@@ -11,7 +11,7 @@
     --text-gray: #8f8f8f;
     --text-lightgray: #acacac;
     --text-purple: #8872ee;
-    --text-violet: #d292fc;
+    --text-violet: #d078ff;
     --card-border: #1a1a1a;
     --card-border-light: #1f1f1f;
     --card-border-lighter: #323232;
@@ -231,7 +231,7 @@ header {
     justify-content: center;
     align-items: left;
 
-    padding-top: 24rem;
+    padding-top: 22rem;
     padding-left: 2.5rem;
     gap: 2.4rem;
     visibility: hidden;
